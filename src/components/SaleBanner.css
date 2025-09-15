@@ -1,0 +1,52 @@
+.sale-banner {
+  width: 90%;
+  height: 500px;
+  background: url('https://images.pexels.com/photos/7026783/pexels-photo-7026783.jpeg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+.sale-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(94, 93, 93, 0.5);
+}
+
+.sale-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.sale-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.sale-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.sale-content button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sale-content button:hover {
+  background-color: #b9a1a1;
+}

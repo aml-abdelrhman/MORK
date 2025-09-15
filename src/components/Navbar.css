@@ -1,0 +1,138 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #222831;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.navbar-left {
+  display: flex;            
+
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 80px;        
+  margin-right: 10px;  
+  color:#FFD369 ;  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;                
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 1.2rem;
+}
+
+.nav-links li a:hover {
+  color: #FFD369;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.nav-links li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+.navbar-right {
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+  
+}
+
+.navbar-right a:hover {
+color: #FFD369;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 90%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: 0.3s ease, transform 0.2s ease;
+  }
+
+  .nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+
+  .navbar-right {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .navbar-right a {
+    transition: color 0.3s ease;
+  }
+
+  .navbar-right a:hover {
+    color: #FFD369;
+  }
+}
+
+
+
+

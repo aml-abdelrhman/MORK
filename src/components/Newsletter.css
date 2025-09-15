@@ -1,0 +1,31 @@
+.newsletter {
+  padding: 40px 20px;
+  text-align: center;
+  background: #eee;
+}
+
+.newsletter form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background: rgb(43, 35, 35);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background: rgb(148, 48, 48);
+}

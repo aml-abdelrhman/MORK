@@ -1,0 +1,30 @@
+.info-section {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.info-section p,
+.info-section ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section li {
+  margin: 10px 0;
+}

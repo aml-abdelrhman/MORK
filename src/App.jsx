@@ -28,8 +28,10 @@ export default function App() {
     alert(`${product.name} تم إضافته للعربة! ✅`);
   };
 
+  const isProd = import.meta.env.MODE === "production"
+
   return (
-    <Router>
+    <Router basename={isProd ? "/MORK" : "/"}>
       <Navbar 
         activeTab={activeTab}
         setActiveTab={setActiveTab}
